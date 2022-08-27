@@ -21,13 +21,13 @@ dependencies {
 
     // Drive JDBC que sera utilizado pelos frameworks que implementam o JPA
     // https://mvnrepository.com/artifact/mysql/mysql-connector-java
-    implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.17'
+    implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.30+'
 
     // === Necessarios para a parte 2 do curso. Essas sao as implementacoes do JPA (Hibernate e EclipseLink) e o automatizador de criacao de Metamodels ===
 
     // Implementacao Hibernate
     // https://mvnrepository.com/artifact/org.hibernate/hibernate-core
-    implementation group: 'org.hibernate', name: 'hibernate-core', version: '5.4.12.Final'
+    implementation group: 'org.hibernate', name: 'hibernate-core', version: '6.1.2.Final+'
 
     // Implementacao EclipseLink
     // https://mvnrepository.com/artifact/org.eclipse.persistence/eclipselink
@@ -35,7 +35,7 @@ dependencies {
 
     // Automatizador de criacao de Metamodels
     // https://mvnrepository.com/artifact/org.hibernate/hibernate-jpamodelgen
-    annotationProcessor('org.hibernate:hibernate-jpamodelgen:5.4.13.Final')
+    annotationProcessor('org.hibernate:hibernate-jpamodelgen:6.1.2.Final+')
 
-    testImplementation group: 'junit', name: 'junit', version: '4.12'
+    testImplementation group: 'junit', name: 'junit', version: '4.13.2+'
 }
